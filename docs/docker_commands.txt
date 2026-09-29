@@ -1,0 +1,32 @@
+Docker Fundamentals Command Log
+
+1. docker --version
+2. docker info
+3. docker run hello-world
+4. docker build -t task9-docker-app .
+5. docker images
+6. docker run -d --name task9-container task9-docker-app
+7. docker ps
+8. docker ps -a
+9. docker logs task9-container
+10. docker logs -f task9-container
+11. docker inspect task9-container
+12. docker stop task9-container
+13. docker start task9-container
+14. docker restart task9-container
+15. docker pause task9-container
+16. docker unpause task9-container
+17. docker exec task9-container python --version
+18. docker network ls
+19. docker network create task9-network
+20. docker network inspect task9-network
+21. docker volume create task9-volume
+22. docker volume ls
+23. docker image inspect task9-docker-app
+24. docker history task9-docker-app
+25. docker tag task9-docker-app task9-docker-app:v1
+26. docker rmi task9-docker-app:v1
+27. docker stop task9-container
+28. docker rm task9-container
+29. docker network rm task9-network
+30. docker volume rm task9-volume
