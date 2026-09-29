@@ -1,1 +1,5 @@
-# No external Python packages are required.
+Flask==3.0.3
+Flask-Cors==4.0.1
+tensorflow==2.17.0
+numpy==1.26.4
+Pillow==10.4.0

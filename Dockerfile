@@ -1,7 +1,19 @@
-FROM python:3.12-slim
+FROM python:3.12
 
 WORKDIR /app
 
-COPY app/app.py /app/app.py
+# Copy requirements
+COPY app/requirements.txt .
 
-CMD ["python", "app.py"]
+# Install dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy all application Python files
+COPY app/ .
+
+# Copy trained model
+COPY cifar10_cnn_model.keras .
+
+EXPOSE 5000
+
+CMD ["python", "flask_api.py"]
