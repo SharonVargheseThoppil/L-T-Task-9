@@ -5,7 +5,7 @@
 To understand Docker architecture and manage containerized applications.
 
 ## Tools Used
-
+   
 - Docker Desktop
 - Docker CLI
 - Visual Studio Code
